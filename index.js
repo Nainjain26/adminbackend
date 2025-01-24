@@ -6,6 +6,7 @@ const { CloudinaryStorage } = require('multer-storage-cloudinary');
 const bodyParser = require('body-parser');
 require("dotenv").config();
 const cors=require('cors')
+const app = express();
 app.use(
   cors({
     origin: 'http://localhost:3000', // Allow requests only from localhost:3000
@@ -13,7 +14,6 @@ app.use(
     credentials: true, 
   })
 );
-const app = express();
 const PORT = 3000;
 
 // MongoDB Atlas connection
