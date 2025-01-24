@@ -5,7 +5,14 @@ const { v2: cloudinary } = require('cloudinary');
 const { CloudinaryStorage } = require('multer-storage-cloudinary');
 const bodyParser = require('body-parser');
 require("dotenv").config();
-
+const cors=require('cors')
+app.use(
+  cors({
+    origin: 'http://localhost:3000', // Allow requests only from localhost:3000
+    methods: ['GET', 'POST', 'PUT', 'DELETE'], // Allowed HTTP methods
+    credentials: true, 
+  })
+);
 const app = express();
 const PORT = 3000;
 
