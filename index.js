@@ -9,7 +9,7 @@ const cors=require('cors')
 const app = express();
 app.use(
   cors({
-    origin: 'http://localhost:3000', // Allow requests only from localhost:3000
+    origin: 'https://vercel.com/socialmedia2/trade-oxi', // Allow requests only from localhost:3000
     methods: ['GET', 'POST', 'PUT', 'DELETE'], // Allowed HTTP methods
     credentials: true, 
   })
