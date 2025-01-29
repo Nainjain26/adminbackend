@@ -9,7 +9,7 @@ const cors=require('cors')
 const app = express();
 app.use(
   cors({
-    origin: 'https://tradeoxi.com', // Allow requests only from localhost:3000
+    origin: 'https://www.tradeoxi.com', // Allow requests only from localhost:3000
     methods: ['GET', 'POST', 'PUT', 'DELETE'], // Allowed HTTP methods
     credentials: true, 
   })
